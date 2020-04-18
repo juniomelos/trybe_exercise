@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 4.5</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //1
+      let h1 = document.createElement("h1");
+      h1.innerHTML = "Exercício 4.5 - JavaScript DOM";
+      document.body.appendChild(h1);
+      //2
+      let firstDiv = document.createElement("div");
+      firstDiv.className= "main-content";
+      document.body.appendChild(firstDiv);
+      //3
+      let childDiv = document.createElement("div");
+      childDiv.className = "center-content";
+      firstDiv.appendChild(childDiv);
+      //4
+      let paragraphsDiv = document.createElement("p");
+      paragraphsDiv.innerHTML = "#vqv";
+      childDiv.appendChild(paragraphsDiv);
+      //5
+      let leftDiv = document.createElement("div");
+      leftDiv.className = "left-content";
+      firstDiv.appendChild(leftDiv);
+      //6
+      let rightDiv = document.createElement("div");
+      rightDiv.className = "right-content";
+      firstDiv.appendChild(rightDiv);
+      //7
+      let img = document.createElement("img");
+      img.className = "small-image";
+      img.src = "https://picsum.photos/200";
+      rightDiv.appendChild(img);
+      //8
+      let array = ["RL", "Gordinho", "Lu", "Cremoso", "Amandinha", "Tulinácio", "Cyrilove", "Robin"];
+      let list = document.createElement("ol");
+      for (let indice in array){
+        let item = document.createElement("li");
+        item.innerHTML = array[indice];
+        list.appendChild(item);
+      }
+      document.body.appendChild(list);
+      //8
+      let numbers = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+      let numbersLits = document.createElement("ul");
+      for (i in numbers){
+        let numbersElement = document.createElement("li");
+        numbersElement.innerHTML = numbers[i]
+        numbersLits.appendChild(numbersElement);
+      }
+      rightDiv.appendChild(numbersLits);
+      //9
+      let h3 = [];
+      for (i = 0; i < 3; i += 1){
+        h3[i] = document.createElement("h3");
+        h3[i].className = "description";
+        firstDiv.appendChild(h3[i]);
+      }
+      //1.1
+      h1.className = "title";
+      //1.2 feito junto com o 9
+      //1.3
+      firstDiv.removeChild(leftDiv);
+      //1.4
+      rightDiv.style.marginRight = "auto";
+      //1.5
+      document.querySelector('.main-content').style.backgroundColor = "green";
+      //1.6
+      numbersLits.removeChild(numbersLits.lastElementChild);
+      numbersLits.removeChild(numbersLits.lastElementChild);
+      
+        
+
+
+
+      //childNodes -> lista filhos de uma <div>
+      //firstElementchild -> me mostra somente as tags do HTML, sem texto, por exemplo
+      //sem o "Element", mostraria todo conteúdo.
+      //nextSiblin -> proximo do mesmo nível.
+      //previousSiblin -> anterior.
+      
+    </script>
+  </body>
+</html>

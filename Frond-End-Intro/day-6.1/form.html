@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de cadastro</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Formulário de Cadastro de Currículo</h1>
+    </header>
+
+    <form id="forms">
+      <fieldset>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" maxlength="11" required />
+        <br /><br />
+
+        <label for="email">Email</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          maxlength="50"
+          pattern="^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$"
+          required
+        />
+        <br /><br />
+
+        <label for="cpf">CPF</label>
+        <input type="text" name="cpf" id="cpf" maxlength="11" required />
+        <br /><br />
+
+        <label for="endereço">Endereço</label>
+        <input
+          type="text"
+          name="endereço"
+          id="endereço"
+          maxlength="200"
+          required
+        />
+        <br /><br />
+
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" id="cidade" maxlength="28" required />
+        <br /><br />
+
+        <label for="estados">Estado</label>
+        <select id="estados" name="estados" required>
+          <option value="">Selecione seu Estado</option>
+        </select>
+        <br /><br />
+
+        <p>Tipo</p>
+        <label for="tipoCasa"
+          ><input type="radio" name="tipo" id="tipoCasa" required />Casa</label
+        >
+        <label for="tipoApto"
+          ><input
+            type="radio"
+            name="tipo"
+            id="tipoApto"
+            required
+          />Apartamento</label
+        >
+        <br /><br />
+      </fieldset>
+
+      <fieldset>
+        <label for="resumo">Resumo do Currículo</label><br />
+        <textarea
+          name="resumo"
+          placeholder="Digite seu resumo"
+          maxlength="1000"
+          cols="50"
+          rows="10"
+          required
+        ></textarea>
+        <br /><br />
+
+        <label for="cargo">Cargo</label>
+        <input type="text" name="cargo" id="cargo" maxlength="40" required />
+        <br /><br />
+
+        <label for="descriçãoCargo">Descrição do Cargo</label>
+        <input
+          type="text"
+          name="descriçãoCargo"
+          id="descriçãoCargo"
+          maxlength="500"
+          required
+        />
+        <br /><br />
+
+        <label for="datainicio">Data de início</label>
+        <input
+          type="text"
+          id="datainicio"
+          placeholder="DD/MM/AAAA"
+          pattern="[0-3][0-9]\/[0-1][0-9]\/[1-2][0-9]{3}"
+          title="data errada"
+          required
+        />
+        <br /><br />
+
+        <input type="button" value="Limpar" id="limpar">
+      </fieldset>
+      <br>
+
+      <input type="submit" id="enviar" value="Enviar">
+      <section></section>
+
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

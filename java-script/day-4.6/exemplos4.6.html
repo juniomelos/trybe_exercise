@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dia 4.6</title>
+</head>
+<body>
+  <button id="btn" type="button">
+    Clique aqui!
+  </button>
+  <div id="div-colorida" style="border: 4px solid green;">
+    Ao clicar na caixa, o texto será alterado!
+  </div>
+  
+  <script>
+    const botao = document.querySelector('#btn');
+    const caixaColorida = document.querySelector('#div-colorida');
+          
+    function abreCaixa() {
+      let textoOriginal = 'Ao clicar na caixa, o texto será alterado!';
+      let textoAlterado = 'Texto alterado! Clique novamente para voltar ao original';
+              
+      if (caixaColorida.innerText === textoOriginal){
+        caixaColorida.innerText = textoAlterado;
+      }
+      
+      else {
+        caixaColorida.innerText = textoOriginal;
+      }
+    }
+  
+    botao.addEventListener('click', abreCaixa);
+  </script>
+</body>
+</html>
+
+/*
+Instruções (leia tudo)
+Agora, uma caixa de texto, dois quadrados e dois botões, as instruções são as seguintes:
+Ao passar o mouse no botão, troque a cor da caixa correspondente para verde.
+Ao clicar no botão, troque o texto da caixa correspondente para o que estiver escrito na caixa de texto.
+Mostre um alerta quando o usuário colar alguma informação dentro da caixa de texto escrito: "Go Trybe!"
+Altere apenas o JavaScript, criando todo o necessário para o event listener funcionar adequadamente. 
+
+//Crie seu código abaixo dessa linha:
+const caixaTexto = document.querySelector('.caixa-texto');
+const botao1 = document.querySelector('.botao1');
+const botao2 = document.querySelector('.botao2');
+const caixaUm = document.querySelector('.caixa1');
+const caixaDois = document.querySelector('.caixa2');
+
+function trocaCorVerde1(){
+  caixaUm.style.backgroundColor = 'green';
+}
+function trocaCorVerde2(){
+  caixaDois.style.backgroundColor = 'green';
+}
+function trocaText1(){
+  caixaUm.innerText = caixaTexto.value;
+  alert("Go Trybe");
+}
+
+function trocaText2(){
+  caixaDois.innerText = caixaTexto.value;
+  alert("Go Trybe");
+}
+
+botao1.addEventListener('mouseover', trocaCorVerde1);
+botao2.addEventListener('mouseover', trocaCorVerde2);
+botao1.addEventListener('click', trocaText1);
+botao2.addEventListener('click', trocaText2);
+*/

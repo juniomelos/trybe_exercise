@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working Elements DOM</title>
+</head>
+
+<body>
+    <div id="paiDoPai">
+        <div id="pai">
+            <div id="primeiroFilho"></div>
+            <div id="elementoOndeVoceEsta">
+                AQUI
+                <div id="primeiroFilhoDoFilho"></div>
+                <div id="segundoEUltimoFilhoDoFilho"></div>
+            </div>
+            Atenção!
+            <div id="terceiroFilho"></div>
+            <div id="quartoEUltimoFilho"></div>
+        </div>
+    </div>
+
+    <script>
+            
+            let pai = document.getElementById("elementoOndeVoceEsta").parentNode;
+            pai.style.color = "red";
+
+            function addText(text){
+                document.getElementById("primeiroFilhoDoFilho").innerText = text;
+            }
+
+            let txt = document.createElement("p");
+            txt.innerHTML = "Ola, tudo bem?";
+
+            document.getElementById("primeiroFilhoDoFilho").appendChild(txt);  //inclui
+            document.getElementById("primeiroFilhoDoFilho").removeChild(txt);  //remove     
+            
+            console.log(
+            //document.getElementById("pai").querySelectorAll("#primeiroFilho")
+            //document.getElementById("elementoOndeVoceEsta").parentNode.innerText
+            //document.getElementById("elementoOndeVoceEsta").parentNode.querySelectorAll("#terceiroFilho")
+            //document.getElementById("pai").querySelectorAll("#terceiroFilho")
+            txt
+            
+            )
+
+
+            addText("Ola!")
+        
+    </script>
+
+</body>
+
+</html>

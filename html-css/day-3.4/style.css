@@ -1,0 +1,50 @@
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom right, rgb(236, 130, 236), rgb(105, 128, 0), rgb(223, 135, 223))
+}
+table, tr, th, td {
+    border: 2px solid black;
+    width: 30%;
+}
+#table {
+    float: center;
+    margin: auto;
+    background-color: rgb(168, 177, 128);
+    }
+.table-title {
+    text-align: center;
+}
+#nav {
+    background-color: rgb(161, 190, 128);
+    width: 100%;
+    display: inline-block;
+    border-radius: 500px;
+}
+.nav-menu {
+    float: right;
+    padding: 25px;
+    color: rgb(80, 48, 121);
+}
+#h1 {
+    text-align: center;
+    font-family: 'Charm', cursive, sans-serif;
+    font-size: 80px;
+    color: rgb(97, 8, 8);
+}
+img {
+    width: 500px;
+    height: 400px;
+    float: center;
+    border-radius: 40px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    clear: both;
+}
+p {
+    line-height: 25px;
+}
+ul {
+    text-align: center;
+}

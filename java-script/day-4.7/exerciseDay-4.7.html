@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 4_7</title>
+    <style>
+    #tittle {
+       text-align: center;
+    }
+    .divbutton {
+        border-color: black;
+        border-style: solid;
+        margin-top: 10px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #main-content {
+        border-color: black;
+        border-style: solid;
+        margin-top: 20px;
+        height: 400px;
+        padding-left: 10px;
+
+      }
+    button{
+        margin: 8px;
+    }    
+    .divblocButton{
+        text-align: center;
+        /* border-color: black;
+        border-style: solid;   */
+        margin-right: auto;
+        margin-left: auto;
+        font-size: medium;
+        line-height: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+    h4{
+    margin-top: 1px; 
+    padding-left: 5%;
+    }
+    </style>
+    <script>
+        window.onload = function(){
+            let buttons = document.querySelectorAll("button"); 
+            
+            for (let i=0; i<buttons.length; i+=1){
+                let buttonClassValue = buttons[i].className;
+                let valueStyleLocalStorage = localStorage.getItem(buttonClassValue);  
+                console.log(buttonClassValue);
+                console.log(valueStyleLocalStorage);
+                    if (typeof buttonClassValue !== 'undefined' && buttonClassValue !== null){
+                    document.body.style[buttonClassValue] = valueStyleLocalStorage;
+                    }
+            }
+            
+                        
+            for (let i=0; i<buttons.length; i+=1){
+                buttons[i].addEventListener('click',function(event){
+                    let buttonvalue = event.target.innerHTML;
+                    let buttonClassValue = buttons[i].className;
+                    console.log(buttonClassValue);
+                    console.log(buttonvalue);
+                    localStorage.setItem(buttonClassValue,buttonvalue);
+                    document.body.style[buttonClassValue] = buttonvalue;
+                })
+            }
+
+             }
+    </script>
+</head>
+    
+
+<body>
+    <main>
+        <div id="tittle">
+            <h1>
+                Exercicio 4_7
+            </h1>
+        </div>
+        <div id="main-content">
+            <h2>
+                O que é o Lorem Ipsum?
+            </h1>
+            <p>
+                O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.
+            </p>
+            <h2>
+            De onde é que ele vem?
+            </h2>
+            <p>
+                Ao contrário da crença popular, o Lorem Ipsum não é simplesmente texto aleatório. Tem raízes numa peça de literatura clássica em Latim, de 45 AC, tornando-o com mais de 2000 anos. Richard McClintock, um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica, descobriu a sua origem. Lorem Ipsum vem das secções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), por Cícero, escrito a 45AC. Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32.
+            </p>
+        </div>
+        <footer>
+            <div class="divbutton">
+                <div class="divblocButton">
+    
+                    <button class="backgroundColor" >SeaGreen</button>
+                    <button class="backgroundColor" >DimGrey</button>
+                    <button class="backgroundColor" >LightSeaGreen  </button>
+                    <h4>Color do fundo</h4>
+                </div>
+                <div class="divblocButton">
+                    <button class="fontSize" >12px</button>
+                    <button class="fontSize" >18px</button>
+                    <h4>Font size</h4>
+                </div>
+                <div class="divblocButton">
+                    <button class="color" >black</button>
+                    <button class="color" >white</button>
+                    <h4>Text Color</h4>
+                </div>
+                <div class="divblocButton">
+                    <button class="lineHeight" >18px</button>
+                    <button class="lineHeight" >22px</button>
+                    <h4>Text line Height</h4>
+                </div>
+                <div class="divblocButton">
+                    <button class="fontFamily" >Helvetica</button>
+                    <button class="fontFamily" >Courier</button>
+                    <h4>Font</h4>
+            </div>
+        </footer>
+        </div>
+    </main>
+</body>
+</html>
