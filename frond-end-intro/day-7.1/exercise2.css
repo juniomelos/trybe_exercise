@@ -50,7 +50,6 @@ nav ul {
    border-radius: 20px;
    padding: 5%;
    width: 35%;
-
  }
 
 .main-content {
@@ -68,4 +67,26 @@ nav ul {
 
 footer {
   font-size: .7em;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  body {
+    font-size: 2em;
+  }
+
+  .asides {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aside-one {
+    padding: 5%;
+    width: 100%;
+  }
+  
+  .aside-two {
+    padding: 5%;
+    width: 100%;
+    margin-top: 5%;
+  }
 }
