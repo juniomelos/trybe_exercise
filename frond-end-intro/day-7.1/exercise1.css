@@ -1,11 +1,12 @@
 body {
+  font-size: 2em;
 
 }
 h1 {
-
+  font-size: .9em;
 }
 h2 {
-
+  font-size: .9em;
 }
 
 img {
@@ -14,4 +15,31 @@ img {
 
 figure {
 	margin: 0;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+    background-color: blueviolet;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+    width: 100%;
+  }
+  
+  img {
+    max-width: 50%;
+  }
+  
+  figure {
+    width: 230px;
+    margin-bottom: 10px;
+    font-size: .6em;
+  }
 }
