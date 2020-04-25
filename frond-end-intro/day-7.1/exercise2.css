@@ -4,3 +4,68 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+body {
+  background: linear-gradient(#d16ed1, #66CCCC);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 50px;
+}
+
+h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+hr.stylehr {
+	border-bottom: 1px solid rgb(65, 55, 207);
+  width: 70%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 80px;
+}
+
+.asides {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ }
+ 
+ .aside-one {
+   background-color: rgb(174, 77, 204);
+   border-radius: 20px;
+   padding: 5%;
+   width: 35%;
+  }
+ 
+ .aside-two {
+   background-color: rgb(174, 77, 204);
+   border-radius: 20px;
+   padding: 5%;
+   width: 35%;
+
+ }
+
+.main-content {
+  text-align: left;
+  text-justify: auto;
+}
+.main-content h1 {
+  font-size: 2em;
+  margin: 7%;
+}
+
+.main-content p {
+  font-family: 'Lobster Two', cursive;
+}
+
+footer {
+  font-size: .7em;
+}
