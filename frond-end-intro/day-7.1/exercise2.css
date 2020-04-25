@@ -1,12 +1,14 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  background: linear-gradient(#d16ed1, #66CCCC);
+  background: linear-gradient(#d16ed1, #66cccc);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,7 +23,7 @@ h1 {
 }
 
 hr.stylehr {
-	border-bottom: 1px solid rgb(65, 55, 207);
+  border-bottom: 1px solid rgb(65, 55, 207);
   width: 70%;
 }
 
@@ -36,21 +38,21 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
- }
- 
- .aside-one {
-   background-color: rgb(174, 77, 204);
-   border-radius: 20px;
-   padding: 5%;
-   width: 35%;
-  }
- 
- .aside-two {
-   background-color: rgb(174, 77, 204);
-   border-radius: 20px;
-   padding: 5%;
-   width: 35%;
- }
+}
+
+.aside-one {
+  background-color: rgb(174, 77, 204);
+  border-radius: 20px;
+  padding: 5%;
+  width: 35%;
+}
+
+.aside-two {
+  background-color: rgb(174, 77, 204);
+  border-radius: 20px;
+  padding: 5%;
+  width: 35%;
+}
 
 .main-content {
   text-align: left;
@@ -66,11 +68,12 @@ nav ul {
 }
 
 footer {
-  font-size: .7em;
+  font-size: 0.7em;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
   body {
+    background: #66cccc;
     font-size: 2em;
   }
 
@@ -83,10 +86,42 @@ footer {
     padding: 5%;
     width: 100%;
   }
-  
+
   .aside-two {
     padding: 5%;
     width: 100%;
     margin-top: 5%;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 800px) {
+  body {
+    background: #dfd3df;
+    font-size: 1.2em;
+  }
+
+  .asides {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aside-one {
+    padding: 5%;
+    width: 100%;
+  }
+
+  .aside-two {
+    padding: 5%;
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-top: 70%;
   }
 }
