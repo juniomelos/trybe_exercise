@@ -1,0 +1,40 @@
+.verso-da-carta {
+  animation: verso;
+}
+
+.cinco-de-ouros {
+  animation: cinco-ouros;
+} 
+
+.nove-de-espadas {
+  animation: nove-espadas;
+}
+
+.quatro-de-paus {
+  animation: quatro-paus;
+} 
+
+.seis-de-copas {
+  animation: seis-copas;
+}
+
+.sete-de-espadas {
+  animation: sete-espadas;
+}
+
+.sete-de-paus {
+  animation: sete-paus;
+}
+
+.tres-de-ouros {
+  animation: tres-ouros 1ms;
+}
+
+@keyframes ex1 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
