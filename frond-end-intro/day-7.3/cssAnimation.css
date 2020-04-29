@@ -2,6 +2,10 @@ body {
   background-color: green;
 }
 
+img {
+  margin: 20px;
+}
+
 .verso-da-carta {
   width: 200px;
   height: auto;
@@ -9,10 +13,8 @@ body {
 }
 
 #grid {
-  display: flex;
-  flex-wrap: wrap;
-  width: auto;
-  justify-content: left;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .rotate:hover {
