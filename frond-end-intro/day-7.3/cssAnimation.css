@@ -1,40 +1,38 @@
+body {
+  background-color: green;
+}
+
 .verso-da-carta {
-  animation: verso;
+  width: 200px;
+  height: auto;
+  margin: 20px;
 }
 
-.cinco-de-ouros {
-  animation: cinco-ouros;
-} 
-
-.nove-de-espadas {
-  animation: nove-espadas;
+#grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: left;
 }
 
-.quatro-de-paus {
-  animation: quatro-paus;
-} 
-
-.seis-de-copas {
-  animation: seis-copas;
+.rotate:hover {
+  transform: rotate(360deg);
+  transition: transform 1s;
 }
 
-.sete-de-espadas {
-  animation: sete-espadas;
+.zoom:hover {
+  animation-name: zoom;
+  animation-duration: 3s;
 }
 
-.sete-de-paus {
-  animation: sete-paus;
-}
-
-.tres-de-ouros {
-  animation: tres-ouros 1ms;
-}
-
-@keyframes ex1 {
+@keyframes zoom {
   from {
-    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
   }
   to {
-    opacity: 1;
+    transform: scale(1);
   }
 }

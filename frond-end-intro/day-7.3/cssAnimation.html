@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Playing Cards</title>
-  <link rel="stylesheet" href="cssAnimation.css">
-</head>
-<body>
-  <img class="verso-da-carta" src="verso-da-carta.png" alt="">
-  <img class="cinco-de-ouros" src="cinco-de-ouros.png" alt="">
-  <img class="nove-de-espadas" src="nove-de-espadas.png" alt="">
-  <img class="quatro-de-paus" src="quatro-de-paus.png" alt="">
-  <img class="seis-de-copas" src="seis-de-copas.png" alt="">
-  <img class="sete-de-espadas" src="sete-de-espadas.png" alt="">
-  <img class="sete-de-paus" src="sete-de-paus.png" alt="">
-  <img class="tres-de-ouros" src="tres-de-ouros.png" alt="">
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playing Cards</title>
+    <link rel="stylesheet" href="cssAnimation.css" />
+  </head>
+  <body>
+
+    <img src="verso-da-carta.png" class="verso-da-carta" id="verso-da-carta" alt="">
+    <div id="grid"></div>
+
+    <script>
+      window.onload = function () {
+        document.querySelector('.verso-da-carta').addEventListener('click', createCard);
+      };
+
+      function getRandomCard() {
+        const imageCards = [
+          'seis-de-copas.png',
+          'tres-de-ouros.png',
+          'quatro-de-paus.png',
+          'sete-de-paus.png',
+          'nove-de-espadas.png',
+          'sete-de-espadas.png',
+          'cinco-de-ouros.png',
+        ];
+
+        const numberCards = imageCards.length;
+        const randomImage = Math.floor(Math.random() * numberCards);
+
+        return imageCards[randomImage];
+      }
+
+      function randomAnimation() {
+        const numberAnimation = 2;
+        const randomAnimation = Math.floor(
+          Math.random() * numberAnimation
+        );
+
+        const animations = ['rotate', 'zoom'];
+
+        return animations[randomAnimation];
+      }
+
+      function createCard() {
+        let card = document.createElement('img');
+        card.src = getRandomCard();
+        card.classList.add('card');
+        card.classList.add(randomAnimation());
+
+        document.querySelector('#grid').appendChild(card);
+      }
+    </script>
+  </body>
 </html>
