@@ -1,0 +1,44 @@
+body {
+  background-color: green;
+}
+
+img {
+  margin: 20px;
+}
+
+.verso-da-carta {
+  width: 200px;
+  height: auto;
+  margin: 20px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.rotate:hover {
+  transform: rotate(360deg);
+  transition: transform 1s;
+}
+
+.zoom:hover {
+  transform: scale(1.3);
+  transition: transform 3s;
+}
+/* .zoom:hover {
+  animation-name: zoom;
+  animation-duration: 3s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+  }
+} */
