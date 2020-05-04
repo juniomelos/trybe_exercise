@@ -60,17 +60,17 @@
 
       //4
       function trocador(outraStr, string) {
-        newStr = string.replace(/x/g, outraStr);
+        newStr = string.replace(/x/, outraStr);
         return newStr;
       }
 
       const skills = ['javascript', 'html', 'css', 'front', 'back'];
       function trocador1() {
-        let newSkills = skills.sort() + ', ' + `${newStr}`;
+        let newSkills = skills.sort() + `, ${newStr}`;
         return newSkills;
       }
 
-      console.log(trocador('exxx', 'coolx'));
+      console.log(trocador('exxx', 'coolxx'));
       console.log(trocador1());
     </script>
   </body>
