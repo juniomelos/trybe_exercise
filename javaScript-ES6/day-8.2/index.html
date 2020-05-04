@@ -6,67 +6,102 @@
     <title>Document</title>
   </head>
   <body>
-    <hr>
-    <input type="text" id="texto" />
-    <input type="button" onclick="fatorial()" value="calcular" />
-    <hr>
-    <input type="text" id="palavras" />
-    <input type="button" onclick="palavra()" value="calcular" />
-    <hr>
-    <input type="button" id="btn" value="numero de cliques" />
-    <p id="numerodecliques"></p>
     <script>
-      function fatorial() {
-        let numero = document.getElementById('texto').value;
-        let resultado = 1;
-        for (let i = 1; i <= numero; i++) {
-          resultado = resultado * i;
-        }
-        alert(resultado);
-      }
+      // Exemplos day 8.2
 
-      function palavra() {
-        let resultado = 0;
-        let tamanhoPalavra = 0;
-        let palavras = document.getElementById('palavras').value.split(' ');
-        for (let i = 0; i < palavras.length; i++) {
-          if (palavras[i].length > tamanhoPalavra) {
-            tamanhoPalavra = palavras[i].length;
-            resultado = palavras[i];
+      const student = {
+        Html: 'Muito Bom',
+        Css: 'Bom',
+        JavaScript: 'Ótimo',
+        SoftSkill: 'Ótimo',
+      };
+
+      const listSkillsWithFor = (student) => {
+        const skills = [];
+        for (skill in student) {
+          skills.push(student[skill]);
+        }
+
+        return skills;
+      };
+
+      const listSkillsWithValues = (student) => Object.values(student);
+
+      // Sem Object.values
+      console.log(listSkillsWithFor(student));
+
+      // Com Object.values
+      console.log(listSkillsWithValues(student));
+
+      ////////////////////////EXERCISIOS PARTE 2 //////////////////////////////////
+
+      const lesson1 = {
+        materia: 'Matemática',
+        numeroEstudantes: 20,
+        professor: 'Maria Clara',
+        turno: 'manhã',
+      };
+
+      const lesson2 = {
+        materia: 'História',
+        numeroEstudantes: 20,
+        professor: 'Carlos',
+      };
+
+      const lesson3 = {
+        materia: 'Matemática',
+        numeroEstudantes: 10,
+        professor: 'Maria Clara',
+        turno: 'noite',
+      };
+
+      // 1 - Crie uma função para adicionar o turno da manhã na lesson2. Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
+
+      const addTurnoManha = (lesson, key, value) => (lesson[key] = value);
+      addTurnoManha(lesson2, 'turno', 'manhã');
+      console.log(lesson2);
+
+      // 2 - Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
+
+      const keysLesson2 = (lesson2) => Object.keys(lesson2);
+      console.log(keysLesson2(lesson2));
+
+      // 3 - Crie uma função para mostrar o tamanho de um objeto.
+
+      const tamanhoObjeto = (objeto) => Object.keys(objeto).length;
+      console.log(tamanhoObjeto(lesson1));
+
+      // 5 - Crie um objeto de nome allLessons, que deve agrupar todas as aulas através do Object.assign. Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1, lesson2 e lesson3.
+
+      const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
+      console.log(allLessons);
+
+      // 6 - Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
+
+      const totalEstudantes = Object.values(todasLessons).reduce(
+        (acumulador, valorAtual) => acumulador + valorAtual.numeroEstudantes, 0);
+      console.log(totalEstudantes);
+
+      // 7 - Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto.
+
+      const valorChave = (objeto, indice) => {
+        const posicao = Object.values(objeto)
+        return posicao[indice]
+      }
+      console.log(valorChave(lesson2, 3));
+
+      // 8 - Crie uma função que verifique se o par (chave / valor) existem na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave.
+
+      const verificarPar = (lesson, key, value) => {
+        const valor = Object.entries(lesson)
+        for (const i in valor) {
+          if (valor[i][0] == key && valor[i][1] == value) {
+            return true
           }
         }
-        alert(resultado);
+        return false;
       }
-
-      function numeroDeCliques() {
-        let clickCount = 0;
-        let botao = document.getElementById('btn');
-        botao.addEventListener('click', () => {
-          clickCount++;
-          mostrarNumeroDeCliques(clickCount);
-        });
-      }
-
-      numeroDeCliques();
-
-      function mostrarNumeroDeCliques(clickCount) {
-        let lugar = document.getElementById('numerodecliques');
-        lugar.innerHTML = clickCount;
-      }
-
-      function trocador(outraPalavra, string) {
-        string.replace(/[x]/gi, outraPalavra);
-        return string;
-      }
-
-      const skills = ['javascript', 'html', 'css', 'top', 'legaldemais'];
-      function trocador2() {
-        let novasSkills = skills.sort() + trocador('topxxxx', 'legal');
-        return novasSkills;
-      }
-
-      console.log(trocador('topxxx', 'legal'));
-      console.log(trocador2());
+      console.log(verificarPar(lesson3, 'turno', 'tarde'))
     </script>
   </body>
 </html>
