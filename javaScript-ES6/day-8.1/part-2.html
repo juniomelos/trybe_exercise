@@ -59,18 +59,18 @@
       }
 
       //4
-      function trocador(outraPalavra, string) {
-        string.replace(/[x]/gi, outraPalavra);
-        return string;
+      function trocador(outraStr, string) {
+        newStr = string.replace(/x/g, outraStr);
+        return newStr;
       }
 
-      const skills = ['javascript', 'html', 'css', 'front-end', 'back-end'];
+      const skills = ['javascript', 'html', 'css', 'front', 'back'];
       function trocador1() {
-        let novasSkills = skills.sort() + trocador('exxxx', 'cool');
-        return novasSkills;
+        let newSkills = skills.sort() + ', ' + `${newStr}`;
+        return newSkills;
       }
 
-      console.log(trocador('exxx', 'cool'));
+      console.log(trocador('exxx', 'coolx'));
       console.log(trocador1());
     </script>
   </body>
