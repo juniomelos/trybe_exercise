@@ -4,7 +4,7 @@ const assert = require('assert');
 //const addOne = (arr) => arr.map((n) => n + 1);
 function addOne(arr){
   let arrayEmpty = []
-  for(let i in arr){
+  for(let i of arr){
     i++;
     arrayEmpty.push(i);
   }
