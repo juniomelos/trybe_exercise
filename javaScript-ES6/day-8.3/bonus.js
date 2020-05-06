@@ -6,16 +6,18 @@ function getChange(payable, paid) {
   // escreva seu código aqui...
   if (payable > paid) throw new Error('paid value is not enough');
 
-
-  while (remaining > 0)
-    for (let i = 0; i < coins.length; i++) {
-      if (remaining >= coins[i]) {
-        remaining -= coins[i];
-        change.push(coins[i]);
+  let position = 0;
+  while (remaining > 0) {
+      if (remaining >= coins[position]) {
+        remaining -= coins[position];
+        change.push(coins[position]);
+      } else {
+         position++
       }
     }
-  return change;
-}
+    return change;
+
+  }
 
 const assert = require('assert');
 
