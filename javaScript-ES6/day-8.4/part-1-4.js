@@ -8,7 +8,7 @@ function findTheNeedle (words, needle) {
     }
   }
   return -1;
-} 
+}
 
 //
 let words = ['house', 'train', 'slide', 'needle', 'book'];
