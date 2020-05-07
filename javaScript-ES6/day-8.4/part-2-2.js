@@ -1,6 +1,10 @@
+const assert = require('assert');
+
 const removeVowels = (word) => {
   const characters = word.split('');
   const results = [];
+  let countVolwes = 0;
+  
 
   for (let i = 0; i < characters.length; i += 1) {
     if (
@@ -10,17 +14,24 @@ const removeVowels = (word) => {
       characters[i] === 'e' ||
       characters[i] === 'u'
     ) {
-      results.push(characters[i]);
+      countVolwes += 1;
+      results.push(countVolwes);
     } else {
-      results.push('_');
+      results.push(characters[i]);
     }
   }
-  return results;
+  let resultsVolwel = results.join('');
+  console.log(resultsVolwel);
+  return resultsVolwel;
 };
 
 
 const parameter = 'Dayane';
 const result = 'D1y2n3';
+
+assert.strictEqual(typeof removeVowels, 'function');
+assert.strictEqual(removeVowels(parameter), result);
+
 /*
   Use a variável parameter como parâmetro da função acima, escreva testes
   para verificar se a mesma está retornando a como se vê na variável result
