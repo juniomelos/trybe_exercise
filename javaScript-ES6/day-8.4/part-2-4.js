@@ -3,7 +3,8 @@ const assert = require('assert');
 function secondThirdSmallest(array) {
   let results = []
   array.sort(function (x, y) {
-    console.log(x+y)
+    console.log(`${x} - ${y}`)
+    console.log(x - y)
 
       return x - y;
   });
