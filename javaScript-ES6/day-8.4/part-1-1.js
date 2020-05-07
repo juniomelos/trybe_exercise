@@ -3,12 +3,13 @@ const assert = require('assert');
 
 //const addOne = (arr) => arr.map((n) => n + 1);
 function addOne(arr){
-  let arrayEmpty = []
+  let result = []
   for(let i of arr){
     i++;
-    arrayEmpty.push(i);
+    result.push(i);
   }
-  return arrayEmpty;
+  console.log(result)
+  return result;
 }
 //
 const myArray = [31, 57, 12, 5];

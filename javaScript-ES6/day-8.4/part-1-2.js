@@ -6,6 +6,7 @@ function wordLengths(arr) {
   for (let i of arr) {
     result.push(i.length);
   }
+  console.log(result);
   return result;
 }
 
