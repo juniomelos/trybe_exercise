@@ -78,7 +78,8 @@ const expected_result = {
 //Dica: Use a função find.
 
 function getNamedBook() {
-  // escreva seu código aqui
+  const caracter = books.find((element) => element.name.length === 26)
+  return caracter;
 }
 
 assert.deepEqual(getNamedBook(), expected_result);
