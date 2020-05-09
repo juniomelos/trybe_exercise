@@ -71,7 +71,14 @@ function smallerName() {
   books.forEach((element) => element.name.length < nameBook.length ? (nameBook = element.name) : nameBook);
   return nameBook;
 }
-/* function smallerName() {
+
+/* 
+//Usando Reduce
+const smallerName = () =>
+  books.reduce((nameBook, e) => (nameBook.name.length < e.name.length ? nameBook : e)).name;
+*/
+/* 
+  function smallerName() {
   let nameBook = '';
   let tamanhoNome = books[0].name.length;
   books.forEach((element) => {
@@ -81,6 +88,7 @@ function smallerName() {
     }});
   
   return nameBook;   // Variável nameBook que receberá o valor do menor nome;
-}; */
+};
+*/
 
 assert.equal(smallerName(), 'Duna');
