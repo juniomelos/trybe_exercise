@@ -1,5 +1,3 @@
-const assert = require('assert');
-
 const obj1 = {
   title: 'My Title',
   description: 'My Description',
@@ -15,6 +13,9 @@ const obj3 = {
   description: 'My Description',
 };
 
-// implemente seus testes aqui
 
-assert.deepStrictEqual(obj1, obj2);
+/* assert.deepStrictEqual(obj1, obj2); */
+
+test('check if objects are strict equal', () => {
+  expect(obj1).not.toBe(obj2);
+});
