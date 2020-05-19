@@ -1,34 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const calcs = require('./exemplosCalcs');
 const array = require('./exemplosArray');
 
 describe('Suíte de Testes dos Exemplos', () => {
+
   test('soma 1 e 2 para dar 3', () => {
     expect(calcs.sum(1, 2)).toEqual(3);
   });
@@ -55,7 +29,8 @@ describe('Suíte de Testes dos Exemplos', () => {
     expect(valor).toBeLessThan(8) ///menor que 8
     expect(valor).toBeLessThanOrEqual(7) ///menor ou igual a 7
     expect(valor).not.toEqual(5) ///não igual a 5
-  })
+  });
+
 });
 
 //  Acima adicionamos mais um require de outro arquivo, e também mais um teste.
