@@ -1,4 +1,9 @@
-import sum from './sum';
+
+/* const sum = require('./sum');
+ */
+
+import  sum from './sum.mjs'
+
 
 describe('Testes sum', () => {
 
