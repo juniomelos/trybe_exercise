@@ -1,8 +1,6 @@
-function retornePares(array){
-  return array.filter(x => x % 2 === 0)
-}
+const retornePares = array => array.filter(x => x % 2 === 0);
 
-function addItem4(array){
+const addItem4 = array => {
   array.push('item4')
   return array
 }

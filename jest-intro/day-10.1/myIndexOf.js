@@ -1,3 +1,4 @@
+/* 
 function myIndexOf(arr, item) {
   let searchedIndex = -1;
   for (let i = 0; i < arr.length; i += 1) {
@@ -7,15 +8,10 @@ function myIndexOf(arr, item) {
   }
   return searchedIndex;
 }
+*/
+
+const myIndexOf = (arr, item) => arr.findIndex(element => element === item);
 
 module.exports = myIndexOf;
-/* 
-//const expectedTwo = myIndexOf([1, 2, 3, 4], 3);
-const expectedTwo = myIndexOf([1, 2, 3, 4], 5);
 
-
-
-//assert.equal(expectedTwo, 2); //ok
-assert.equal(expectedTwo, -1); //ok 
-*/
 
