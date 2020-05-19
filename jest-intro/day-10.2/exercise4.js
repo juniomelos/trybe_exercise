@@ -15,7 +15,7 @@ const greet = (temperature) =>
 const handleError = (errorReason) =>
   console.log(`Error getting temperature: ${errorReason}`);
 
-// definição da função sendMarsTemperature...
+// definição da função sendMarsTemperature
 const sendMarsTemperature = (currentTemperature, error) => {
   setTimeout(() => {
     Math.random() >= 0.5

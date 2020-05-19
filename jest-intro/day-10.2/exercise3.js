@@ -12,4 +12,5 @@ const getPlanet = () => {
 getPlanet(); // imprime Marte depois de 4 segundos
 
 //  3. A função getPlanet imprime o planeta Marte de forma síncrona.
-//  Modifique getPlanet, de forma que Marte seja impresso assincronamente, depois de 4 segundos.
+//  Modifique getPlanet, de forma que Marte seja impresso assincronamente, 
+//  depois de 4 segundos.
