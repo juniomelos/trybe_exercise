@@ -1,7 +1,6 @@
 const myRemoveWithoutCopy = require('./myRemoveWithoutCopy');
 
 describe('Teste myRemoveWithoutCopy', () => {
-
   test('return array without 3', () => {
     expect(myRemoveWithoutCopy([1, 2, 3, 4], 3)).toEqual([1, 2, 4]);
   });
@@ -14,7 +13,6 @@ describe('Teste myRemoveWithoutCopy', () => {
     expect(myRemoveWithoutCopy([1, 2, 3, 4], 3)).not.toEqual([1, 2, 3, 4]);
   });
 });
-
 
 /* //const expectativeFive  = myRemoveWithoutCopy([1, 2, 3, 4], 3);
 const expectativeFive  = myRemoveWithoutCopy([1, 2, 3, 4], 5);
