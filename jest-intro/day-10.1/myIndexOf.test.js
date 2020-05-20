@@ -1,7 +1,6 @@
 const myIndexOf = require('./myIndexOf');
 
 describe('Testes myIndexOf', () => {
-
   test('returns the item in the informed position', () => {
     expect(myIndexOf([1, 2, 3, 4], 3)).toBe(2);
   });
