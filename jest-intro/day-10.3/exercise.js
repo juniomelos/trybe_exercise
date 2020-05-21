@@ -11,7 +11,7 @@ const randowNumber = () => {
       ? resolve(`${sum}: Success`)
       : reject('É mais de oito mil! Essa promise deve estar quebrada!');
     //  Se a soma dos elementos for < a 8000, a promise deve ser resolvida. Caso contrário, ela deve ser rejeitada
-    
+
     const arrayDivisionNumber = [2, 3, 5, 10];
     const divisionNumber = arrayDivisionNumber.map(
       (num) => divisionNumber / num,
@@ -32,3 +32,5 @@ randowNumber()
   .catch((err) => {
     console.log(err);
   });
+
+onload = () => fetchJoke();
