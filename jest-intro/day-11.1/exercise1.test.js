@@ -1,7 +1,5 @@
 const uppercase = (str, callback) => {
-  setTimeout(() => {
     callback(str.toUpperCase());
-  }, 5000);
 };
 
 //  1. Escreva um teste que verifique a chamada do callback de uma função uppercase,
@@ -9,9 +7,8 @@ const uppercase = (str, callback) => {
 //  Lembre-se de ter cuidado com os falso-positivos em testes assíncronos.
 
 test('Upper case', done => {
-  const callback = str => {
-    expect(str).toBe('home');
+  uppercase('home', str => {
+    expect(str).toBe('HOME');
     done();
-  };
-  uppercase('home', callback);
+  });
 });
