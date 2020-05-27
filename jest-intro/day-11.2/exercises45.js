@@ -3,14 +3,12 @@
 //  A segunda deve também receber uma string e retornar só a primeira letra.
 //  A terceira deve receber duas strings e concatená-las.
 
-const strUpperCase = str => str.strUpperCase();
+const strUpperCase = str => str.toUpperCase();
 const strFirstLetter = str => str.charAt();
 const strConcatenated = (a, b) => a.concat(b);
-
-
 
 module.exports = {
   strUpperCase,
   strFirstLetter,
-  strConcatenated
+  strConcatenated,
 };
