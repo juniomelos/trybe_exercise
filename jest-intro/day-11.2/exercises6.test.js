@@ -25,7 +25,7 @@ describe('Mockando a requisição', () => {
 
     expect(service.fetchDogPictures()).rejects.toMatch('request failed');
     expect(service.fetchDogPictures).toHaveBeenCalledTimes(1);
-    //  Como a função foi reseta, essa é a primeira vez que é chamado esse teste.
+    //  Como a função foi resetada, essa é a primeira vez que é chamado esse teste.
   });
 
 })

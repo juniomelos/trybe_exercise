@@ -1,7 +1,5 @@
 const service = require('./exercises4');
 
-//  Exercise 5
-
 test('Restaure a implementação original da primeira função e crie os testes.', () => {
     
   const functionUpperCase = jest
@@ -15,4 +13,4 @@ test('Restaure a implementação original da primeira função e crie os testes.
 
   service.strUpperCase.mockRestore();
   expect(service.strUpperCase('cansado')).toBe('CANSADO');
-}); 
+});
