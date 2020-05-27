@@ -1,5 +1,5 @@
-const service = require('./exercises45');
-jest.mock('./exercises45');
+const service = require('./exercises4');
+jest.mock('./exercises4');
 
 //  Exercise 4
 
@@ -30,21 +30,4 @@ test('Receber três strings e concatená-las.', () => {
   expect(service.strConcatenated).toHaveBeenCalledWith('can', 'sa', 'do');
 });
 
-//  Exercise 5
 
-test('Restaure a implementação original da primeira função e crie os testes.', () => {
-  
-  expect(service.strUpperCase('cansado')).toBe('CANSADO');
-  
-  const functionUpperCase = jest
-    .spyOn(service, 'strUpperCase')
-    .mockImplementation(str => str.toLowerCase());
-
-  expect(functionUpperCase('CANSADO')).toBe('cansado');
-  expect(functionUpperCase).toHaveBeenCalled();
-  expect(functionUpperCase).toHaveBeenCalledTimes(2);
-  expect(functionUpperCase).toHaveBeenCalledWith('CANSADO');
-
-  service.strUpperCase.mockRestore();
-  expect(service.strUpperCase('cansado')).toBe('CANSADO');
-});
