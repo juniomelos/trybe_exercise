@@ -66,13 +66,13 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 10-3: *JavaScript Promises*
 - [x] 10-4: *[Project - Shopping Cart]()*
 ##### Block 11: Jest
-- [ ] 11-1: *Jest - Asynchronous Tests*
-- [ ] 11-2: *Jest - Simulating behaviors*
-- [ ] 11-3: *[Project - Asynchronous Jest and Mocking]()*
+- [x] 11-1: *Jest - Asynchronous Tests*
+- [x] 11-2: *Jest - Simulating behaviors*
+- [x] 11-3: *[Project - Asynchronous Jest and Mocking]()*
 ##### Block 12: Introduction - React
-- [ ] 12-1: *'Hello, world!' in React!*
-- [ ] 12-2: *React Components*
-- [ ] 12-3: *[Project - Movie Cards Library]()*
+- [x] 12-1: *'Hello, world!' in React!*
+- [x] 12-2: *React Components*
+- [x] 12-3: *[Project - Movie Cards Library]()*
 ##### Block 13: React
 - [ ] 13-1: *Components with status*
 - [ ] 13-2: *React events and forms*
