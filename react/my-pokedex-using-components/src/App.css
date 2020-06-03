@@ -1,8 +1,33 @@
+
+.card-parent{
+  width: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+button {
+  margin-left: 10px;
+  border: 2px solid white;
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px gray;
+  height: 25px;
+  color: white;
+  font-weight: bold;
+  min-width: 80px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
 body {
-  align-items: flex-end;
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin: 10px;
   text-align: center;
   background-color: rgb(246, 240, 247);
 }
@@ -20,11 +45,15 @@ body {
 }
 
 .pokedex {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 40px;
-  background-color: purple;
+  text-align: center;
+  font-size: 2em;
+}
+
+.btn {
+  width: 13em;
+  height: 3.5em;
+  margin: 1em;
+  background-color: rgb(143, 117, 155);
   border-radius: 10px;
 }
 
