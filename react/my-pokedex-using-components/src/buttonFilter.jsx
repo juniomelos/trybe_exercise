@@ -2,17 +2,19 @@ import React from 'react';
 import './App.css';
 
 class ButtonFilter extends React.Component {
-  handleClick(event) {
+  handleClick = event => {
     this.props.filter(event.target.innerHTML);
-  }
+  };
 
   render() {
     return (
       <div>
-        <p><strong>Filter by Type:</strong></p>
-        <button onClick={this.handleClick.bind(this)}>Fire</button>
-        <button onClick={this.handleClick.bind(this)}>Psychic</button>
-        <button onClick={this.handleClick.bind(this)}>All</button>
+        <p>
+          <strong>Filter Type:</strong>
+        </p>
+        <button className='btn' onClick={this.handleClick}>All</button>
+        <button className='btn' onClick={this.handleClick}>Fire</button>
+        <button className='btn' onClick={this.handleClick}>Psychic</button>
       </div>
     );
   }

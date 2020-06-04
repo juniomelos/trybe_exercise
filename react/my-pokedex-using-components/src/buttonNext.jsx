@@ -8,7 +8,7 @@ class ButtonNext extends React.Component{
 
   render(){
     return (
-      <button onClick={this.handleClick.bind(this)}>Next ></button>
+      <button className='btn' onClick={this.handleClick.bind(this)}>Next =></button>
     )
   }
 }
