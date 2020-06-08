@@ -71,9 +71,8 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 12-1: *'Hello, world!' in React!*
 - [x] 12-2: *React Components*
 - [x] 12-3: *[Project - Movie Cards Library]()*
-
-##*Due to the unshift (removal of a block) the blocks were updated.
 ##### Block 12: React
+*Due to the unshift (removal of a block) the blocks were updated.*
 - [x] 12-1: *Components with status*
 - [x] 12-2: *React events and forms*
 - [x] 12-3: *[Project - Movie Cards Library Stateful]()*
