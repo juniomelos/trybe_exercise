@@ -10,7 +10,7 @@ const Alert = (props) => {
 
 Alert.propTypes = {
   timeSeconds: PropTypes.number,
-  childrem: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
   hideComponent: PropTypes.func.isRequired,
 };
 
