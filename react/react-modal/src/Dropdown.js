@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes, { element } from "prop-types";
 import React, { Component } from "react";
 import "./Dropdown.css";
 
@@ -8,6 +8,7 @@ class Dropdown extends Component {
 
     this.state = {
       isOpen: false,
+      clickedItemId: this.props.listContent[0].id,
     };
   }
 
@@ -17,19 +18,26 @@ class Dropdown extends Component {
     }));
   };
 
+  handleItemClick = (id) => {
+    this.setState ({
+      clickedItemId: id,
+    })
+  }
+
   render() {
     const { children, listContent } = this.props;
-    const { isOpen } = this.state;
+    const { isOpen, clickedItemId } = this.state;
+    const { item } = listContent.find((element) => element.id === clickedItemId);
 
     return (
       <div className="list-container">
         <span>{children}</span>
         <div className="dropdown-button" onClick={this.toggleDrown}>
-          {listContent[0].item}
+          {item}
         </div>
         <div className={isOpen ? "dropdown-menu" : "dropdown-menu-hidden"}>
           {listContent.map(({ id, item }) => (
-            <div key={id}>
+            <div key={id} onClick={() => this.handleItemClick(id)}>
               <span>{item}</span>
             </div>
           ))}
