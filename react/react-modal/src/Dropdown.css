@@ -1,0 +1,30 @@
+body {
+  margin: 10px;
+}
+
+.dropdown-button {
+  background-color: white;
+  width: 50px;
+  height: 20px;
+  border: 3px solid purple;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.list-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: center;
+}
+
+.dropdown-menu {
+  background-color: white;
+  width: 200px;
+  border: 3px solid purple;
+  border-radius: 5px;
+}
+
+.dropdown-menu-hidden {
+  display: none;
+}
