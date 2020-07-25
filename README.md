@@ -77,31 +77,31 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 12-2: *React events and forms*
 - [x] 12-3: *[Project - Movie Cards Library Stateful]()*
 ##### Block 13: React
-- [ ] 13-1: *Improving component reuse: props.children and PropTypes*
-- [ ] 13-2: *React component life cycle*
-- [ ] 13-3: *React Router*
-- [ ] 13-4: *[Project - Movie Cards Library CRUD]()*
+- [x] 13-1: *Improving component reuse: props.children and PropTypes*
+- [x] 13-2: *React component life cycle*
+- [x] 13-3: *React Router*
+- [x] 13-4: *[Project - Movie Cards Library CRUD]()*
 ##### Block 14: Agile Methodologies
-- [ ] 14-1: *Agile Methodologies*
-- [ ] 14-2: *[Project - Frontend Online Store]()*
+- [x] 14-1: *Agile Methodologies*
+- [x] 14-2: *[Project - Frontend Online Store]()*
 ##### Block 15: React
-- [ ] 15-1: *Testing React with the React Testing Library*
-- [ ] 15-2: *Testing React with the React Testing Library - Part 2*
-- [ ] 15-3: *[Project - React Tests]()*
+- [x] 15-1: *Testing React with the React Testing Library*
+- [x] 15-2: *Testing React with the React Testing Library - Part 2*
+- [x] 15-3: *[Project - React Tests]()*
 ##### Block 16: React
-- [ ] 16-1: *Introduction to Redux*
-- [ ] 16-2: *React with Redux - part 1*
-- [ ] 16-3: *React with Redux - part 2*
-- [ ] 16-4: *[Project - Table with data filters]()*
+- [x] 16-1: *Introduction to Redux*
+- [x] 16-2: *React with Redux - part 1*
+- [x] 16-3: *React with Redux - part 2*
+- [x] 16-4: *[Project - Table with data filters]()*
 ##### Block 17: React
-- [ ] 17-1: *[Project - Trivia Game]()*
+- [x] 17-1: *[Project - Trivia Game]()*
 ##### Block 18: React & Redux
-- [ ] 18-1: *React Context API*
-- [ ] 18-2: *React Hooks - useState and useContext*
-- [ ] 18-3: *React Hooks - useEffect and custom Hooks*
-- [ ] 18-4: *[Project - Datatable StarWars with Context API and Hooks]()*
+- [x] 18-1: *React Context API*
+- [x] 18-2: *React Hooks - useState and useContext*
+- [x] 18-3: *React Hooks - useEffect and custom Hooks*
+- [x] 18-4: *[Project - Datatable StarWars with Context API and Hooks]()*
 ##### Block 19: Final Front-end Project
-- [ ] 19-1: *[Project - Recipe App]()*
+- [x] 19-1: *[Project - Recipe App]()*
 
 ## Back-end development :hourglass_flowing_sand:
 ##### Block 20: Introduction - Relational Databases
