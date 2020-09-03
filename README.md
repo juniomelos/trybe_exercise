@@ -20,7 +20,7 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 3-2: *HTML & CSS - Getting Started with CSS*
 - [x] 3-3: *HTML & CSS - Selectors and positioning*
 - [x] 3-4: *Semantic HTML*
-- [x] 3-5: *[Project - HTML & CSS](https://github.com/juniomelos/trybe_project_sd04/tree/master/sd-04-block3-project-html-css)*
+- [x] 3-5: *[Project - HTML & CSS](https://github.com/juniomelos/trybe_project_sd04/tree/master/sd-04-block3-project-html-css){:target="_blank" rel="noopener"}*
 ##### Block 4: Introduction - JavaScript
 - [x] 4-1: *JavaScript - Getting Started*
 - [x] 4-2: *JavaScript - For Array and Loop*
