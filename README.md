@@ -35,7 +35,7 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 5-2: *[Project - Art with Pixels](https://github.com/juniomelos/trybe_project_sd04/tree/master/sd-04-block5-project-pixels-art)*
 - [x] 5-3: *[Project - ToDo List](https://github.com/juniomelos/trybe_project_sd04/tree/master/sd-04-block5-project-todo-list)*
 
-## Front-end development :hourglass_flowing_sand:
+## Front-end development :white_check_mark:
 ##### Block 6: Introduction - Front-end
 - [x] 6-1: *HTML & CSS - Forms*
 - [x] 6-2: *JavaScript libraries and CSS frameworks*
@@ -105,7 +105,7 @@ The program has more than **1,500 hours** of classroom and online classes and co
 
 ## Back-end development :hourglass_flowing_sand:
 ##### Block 20: Introduction - Relational Databases
-- [x] 20-1: *SQL database*
+- [x] 20-1: *Introduction - Backend*
 - [x] 20-2: *Finding data in a database*
 - [x] 20-3: *Filtering data specifically*
 - [x] 20-4: *Manipulating tables*
@@ -117,41 +117,39 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 21-4: *[Project - Vocabulary Booster](#)*
 ##### Block 22: Relational Databases
 - [x] 22-1: *Transforming ideas into a database model*
-- [x] 22-2: *Transforming ideas into a database model - Part 2*
-- [x] 22-3: *[Project - Queries Unite](#)*
-##### Block 23: Relational Databases
-- [x] 23-1: *Normalization and Normal Forms*
-- [x] 23-29: *[Dumps & Project - One For All](#)*
-##### Block 24: Introduction - NoSQL
-- [x] 24-1: *MongoDB - Introduction*
-- [x] 24-2: *MongoDB - Find*
-- [x] 24-3: *Filter Operators*
-- [x] 24-4: *[Project - Data Flights](#)*
+- [x] 22-2: *Normalization, Normal Forms and Dumps*
+- [x] 22-3: *Transforming ideas into a database model - Part 2*
+- [x] 22-3: *[Project - One For All](#)*
+##### Block 23: Introduction - NoSQL
+- [x] 23-1: *NoSQL Introduction*
+- [x] 23-2: *MongoDB Introduction*
+- [x] 23-3: *Filter Operators*
+- [x] 23-4: *[Project - Data Flights](#)*
 ##### Block 25: Updates
-- [ ] 25-1: *Simple Updates*
-- [ ] 25-2: *Complex Updates - Arrays - Part 1*
-- [ ] 25-3: *Complex Updates - Arrays - Part 2*
-- [ ] 25-4: *[Project - Commerce](#)*
+- [ ] 24-1: *Simple Updates*
+- [ ] 24-2: *Complex Updates - Arrays - Part 1*
+- [ ] 24-3: *Complex Updates - Arrays - Part 2*
+- [ ] 24-4: *[Project - Commerce](#)*
 ##### Block 26: Aggregation Framework
-- [ ] 26-1: *Aggregation Framework - Part 1*
-- [ ] 26-2: *Aggregation Framework - Part 2*
-- [ ] 26-3: *Aggregation Framework - Part 3*
-- [ ] 26-4: *[Project - Aggregations](#)*
+- [ ] 25-1: *Aggregation Framework - Part 1*
+- [ ] 25-2: *Aggregation Framework - Part 2*
+- [ ] 25-3: *Aggregation Framework - Part 3*
+- [ ] 25-4: *[Project - Aggregations](#)*
 ##### Block 27: Intro - NodeJS
-- [ ] 27-1: *NodeJS - Introduction*
-- [ ] 27-2: *NodeJS - Architecture*
-- [ ] 27-3: *NodeJS - Asynchronous Flow*
-- [ ] 27-4: *[Project - A CLI of Ice and Fire](#)*
+- [ ] 26-1: *NodeJS - Introduction*
+- [ ] 26-2: *NodeJS - Architecture*
+- [ ] 26-3: *NodeJS - Asynchronous Flow*
+- [ ] 26-4: *[Project - A CLI of Ice and Fire](#)*
 ##### Block 28: NodeJS
-- [ ] 28-1: *NodeJS - HTTP requests*
-- [ ] 28-2: *Express - Introduction*
-- [ ] 28-3: *Express - Static files and SSR*
-- [ ] 28-4: *[Project - Crypto Index](#)*
+- [ ] 27-1: *NodeJS - HTTP requests*
+- [ ] 27-2: *Express - Introduction*
+- [ ] 27-3: *Express - Static files and SSR*
+- [ ] 27-4: *[Project - Crypto Index](#)*
 ##### Block 29: NodeJS
-- [ ] 29-1: *NodeJS - JWT - (JSON Web Token)*
-- [ ] 29-2: *NodeJS - Input & Output*
-- [ ] 29-3: *Web architecture - Rest and Restful*
-- [ ] 29-4: *[Project - Online Store with JWT](#)*
+- [ ] 28-1: *NodeJS - JWT - (JSON Web Token)*
+- [ ] 28-2: *NodeJS - Input & Output*
+- [ ] 28-3: *Web architecture - Rest and Restful*
+- [ ] 28-4: *[Project - Online Store with JWT](#)*
 
 ## Infrastructures :hourglass_flowing_sand:
 ##### Block 30: Introduction - Deploy
