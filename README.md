@@ -125,36 +125,35 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 23-2: *MongoDB Introduction*
 - [x] 23-3: *Filter Operators*
 - [x] 23-4: *[Project - Data Flights](#)*
-##### Block 25: Updates
-- [ ] 24-1: *Simple Updates*
-- [ ] 24-2: *Complex Updates - Arrays - Part 1*
-- [ ] 24-3: *Complex Updates - Arrays - Part 2*
-- [ ] 24-4: *[Project - Commerce](#)*
-##### Block 26: Aggregation Framework
-- [ ] 25-1: *Aggregation Framework - Part 1*
-- [ ] 25-2: *Aggregation Framework - Part 2*
-- [ ] 25-3: *Aggregation Framework - Part 3*
-- [ ] 25-4: *[Project - Aggregations](#)*
-##### Block 27: Intro - NodeJS
-- [ ] 26-1: *NodeJS - Introduction*
-- [ ] 26-2: *NodeJS - Architecture*
-- [ ] 26-3: *NodeJS - Asynchronous Flow*
-- [ ] 26-4: *[Project - A CLI of Ice and Fire](#)*
+##### Block 24: Updates
+- [x] 24-1: *Simple Updates*
+- [x] 24-2: *Complex Updates - Arrays - Part 1*
+- [x] 24-3: *Complex Updates - Arrays - Part 2*
+- [x] 24-4: *[Project - Commerce](#)*
+##### Block 25: Aggregation Framework
+- [x] 25-1: *Aggregation Framework - Part 1*
+- [x] 25-2: *Aggregation Framework - Part 2*
+- [x] 25-3: *[Project - Aggregations](#)*
+##### Block 26: NodeJS
+- [x] 26-1: *NodeJS - Introduction*
+- [x] 26-2: *NodeJS - Asynchronous Flow*
+- [x] 26-3: *NodeJS - Architecture*
+- [x] 26-4: *Express: HTTP with Node.js*
+- [x] 26-5: *Express Practicing*
+- [x] 26-6: *Software Architecture - Introduction to MVC*
+- [x] 26-7: *[Project - Cookmaster](#)*
+##### Block 27: Software Architecture
+- [ ] 27-1: *Software Architecture - Service Camda*
+- [ ] 27-2: *Web Architecture - Rest and Restful*
+- [ ] 27-3: *[Project - Store Manager](#)*
 ##### Block 28: NodeJS
-- [ ] 27-1: *NodeJS - HTTP requests*
-- [ ] 27-2: *Express - Introduction*
-- [ ] 27-3: *Express - Static files and SSR*
-- [ ] 27-4: *[Project - Crypto Index](#)*
-##### Block 29: NodeJS
-- [ ] 28-1: *NodeJS - JWT - (JSON Web Token)*
-- [ ] 28-2: *NodeJS - Input & Output*
-- [ ] 28-3: *Web architecture - Rest and Restful*
-- [ ] 28-4: *[Project - Online Store with JWT](#)*
-
+- [ ] 28-1: *NodeJS - JWT (JSON Web Token)*
+- [ ] 28-2: *NodeJS - Upload files with Multer*
+- [ ] 28-3: *[Project - Cookmaster V2](#)*
 ## Infrastructures :hourglass_flowing_sand:
-##### Block 30: Introduction - Deploy
-- [ ] 30-1: *Infrastructure - Deploy with Heroku*
-- [ ] 30-2: *Deploy - Process Managers*
-- [ ] 30-3: *[Project - Stranger Things](#)*
+##### Block 29: Introduction - Deploy
+- [ ] 29-1: *Infrastructure - Deploy with Heroku*
+- [ ] 29-2: *Deploy - Process Managers*
+- [ ] 29-3: *[Project - Stranger Things](#)*
 
 # [...]
