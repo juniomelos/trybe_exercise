@@ -11,7 +11,7 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 1-3: *Unix & Bash - Part 1*
 - [x] 1-4: *Unix & Bash - Part 2*
 - [x] 1-5: *Shell Script*
-##### Block 2: Git & GitHub 
+##### Block 2: Git & GitHub
 - [x] 2-1: *What is it and what is it for?*
 - [x] 2-2: *Understanding the commands*
 - [x] 2-3: *Internet - Understanding how it works*
@@ -103,7 +103,7 @@ The program has more than **1,500 hours** of classroom and online classes and co
 ##### Block 19: Final Front-end Project
 - [x] 19-1: *[Project - Recipe App](#)*
 
-## Back-end development :hourglass_flowing_sand:
+## Back-end development :white_check_mark:
 ##### Block 20: Introduction - Relational Databases
 - [x] 20-1: *Introduction - Backend*
 - [x] 20-2: *Finding data in a database*
@@ -141,19 +141,36 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 26-4: *Express: HTTP with Node.js*
 - [x] 26-5: *Express Practicing*
 - [x] 26-6: *Software Architecture - Introduction to MVC*
-- [x] 26-7: *[Project - Cookmaster](#)*
+- [x] 26-7: *[Project - Crush Manager](#)*
 ##### Block 27: Software Architecture
-- [ ] 27-1: *Software Architecture - Service Camda*
-- [ ] 27-2: *Web Architecture - Rest and Restful*
-- [ ] 27-3: *[Project - Store Manager](#)*
-##### Block 28: NodeJS
-- [ ] 28-1: *NodeJS - JWT (JSON Web Token)*
-- [ ] 28-2: *NodeJS - Upload files with Multer*
-- [ ] 28-3: *[Project - Cookmaster V2](#)*
-## Infrastructures :hourglass_flowing_sand:
-##### Block 29: Introduction - Deploy
-- [ ] 29-1: *Infrastructure - Deploy with Heroku*
-- [ ] 29-2: *Deploy - Process Managers*
-- [ ] 29-3: *[Project - Stranger Things](#)*
+- [x] 27-1: *Software Architecture - Service Camda*
+- [x] 27-2: *Web Architecture - Rest and Restful*
+- [x] 27-3: *[Project - Store Manager](#)*
+##### Block 28: File Authentication and Upload
+- [x] 28-1: *NodeJS - JWT (JSON Web Token)*
+- [x] 28-2: *NodeJS - Upload files with Multer*
+- [x] 28-3: *[Project - Cookmaster](#)*
+##### Block 29: Deployment
+- [x] 29-1: *Introduction - Deploy*
+- [x] 29-2: *Deploy with Heroku*
+- [x] 29-3: *Process Managers*
+- [x] 29-4: *[Project - Stranger Things](#)*
+##### Block 30: Project Trybeer
+- [x] 30-1: *[Project - Trybeer](#)*
+##### Block 31: Architecture: SOLID and ORM
+- [x] 31-1: *SOLID Principles*
+- [x] 31-2: *ORM*
+- [x] 31-3: *ORM - Associations*
+- [x] 31-4: *Good practice in writing tests*
+- [x] 31-5: *[Project - Blogs API](#)*
+##### Block 32: Sockets
+- [x] 32-1: *Sockets - TCP/UDP & NET*
+- [x] 32-2: *Socket.io*
+- [x] 32-3: *Software Architecture - Camda de View*
+- [x] 32-4: *[Project - Webchat](#)*
+##### Block 33: Project Trybeer II
+- [x] 33-1: *[Project - Trybeer V2](#)*
+
+
 
 # [...]
