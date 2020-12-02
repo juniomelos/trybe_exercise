@@ -166,8 +166,7 @@ The program has more than **1,500 hours** of classroom and online classes and co
 ##### Block 32: Sockets
 - [x] 32-1: *Sockets - TCP/UDP & NET*
 - [x] 32-2: *Socket.io*
-- [x] 32-3: *Software Architecture - Camda de View*
-- [x] 32-4: *[Project - Webchat](#)*
+- [x] 32-3: *[Project - Webchat](#)*
 ##### Block 33: Project Trybeer II
 - [x] 33-1: *[Project - Trybeer V2](#)*
 
